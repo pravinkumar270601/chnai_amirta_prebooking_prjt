@@ -211,8 +211,8 @@ const LoginPage = ({ setCourseName, setSuccessName }) => {
     } else if (userId) {
       setIsPaymentSuccess(true);
       const options = {
-        key: "rzp_live_4iVK2HTZRlTdZR",
-        key_secret: "KUB3mpB2ezM2LK07JJB5q9HF", // Your Razorpay API key
+        // key: "rzp_live_4iVK2HTZRlTdZR",
+        // key_secret: "KUB3mpB2ezM2LK07JJB5q9HF", // Your Razorpay API key
         amount: 9900, // Amount in paisa (e.g., 99 INR)
         currency: "INR",
         name: "Chennais Amirtha", // Your company name
