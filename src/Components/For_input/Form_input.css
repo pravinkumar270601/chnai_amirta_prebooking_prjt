@@ -1,0 +1,37 @@
+/* .form_input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.input_label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  margin-top: 10px;
+} */
+
+
+.input_sec{
+  width: 350px;
+}
+.form_input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #EBEBEB;
+  /* margin-bottom: 7px; */
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.input_label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  color: #353942;
+  /* margin-right: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #353942; */
+}

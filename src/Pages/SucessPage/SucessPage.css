@@ -1,0 +1,119 @@
+.horizontal_line {
+  border: 7px solid #ed2a00;
+}
+.logo_icon {
+  height: 60px;
+  /* border-top: 15px; */
+}
+.Ai_Icon {
+  width: 250px;
+}
+.name {
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 1px;
+}
+.sucess {
+  color: #1aa800;
+  font-weight: 600;
+  font-size: 15px;
+}
+.red {
+  color: #ed2a00;
+  font-weight: 600;
+  font-size: 15px;
+}
+.home-btn {
+  background-color: #ed2a00;
+  margin-top: 20px;
+  border: 1px solid #ed2a00;
+  height: 40px;
+  width: 76%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+/* @media screen and (min-width: 501px){
+    .successpage_div{
+        width: 500px !important;
+        margin:30px 50px 30px 0px !important;
+        padding: 0 20px;
+        border-radius: 5px;
+        
+    }
+    .Book_your_p1{
+        color: #ED2A00;
+        font-size: 20px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        font-weight: 800;
+    }
+} */
+/* @media screen and (max-width: 500px){
+    .Book_your_p1{
+        color: #ED2A00;
+        font-size: 15px !important;
+        
+        font-weight: 800;
+    }
+    .main_sec{ 
+        justify-content: center;
+    }
+} */
+
+/* Desktop view */
+@media (min-width: 992px) {
+  .successpage_div {
+    width: 500px !important;
+    margin: 30px 50px 30px 0px !important;
+    padding: 0 20px;
+    border-radius: 5px;
+    justify-content: end;
+  }
+  .Book_your_p1 {
+    color: #ed2a00;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-weight: 800;
+  }
+}
+
+/* Tablet view */
+
+@media (min-width: 621px) and (max-width: 991px) {
+  .successpage_div {
+    width: 500px !important;
+    margin: 30px 50px 30px 0px;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .Book_your_p1 {
+    color: #ed2a00;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-weight: 800;
+  }
+  .main_sec {
+    justify-content: center !important;
+  }
+}
+
+/* mobile view */
+@media (max-width: 620px) {
+  .Book_your_p1 {
+    color: #ed2a00;
+    font-size: 15px !important;
+    font-weight: 800;
+  }
+
+  .main_sec {
+    justify-content: center !important;
+  }
+  .successpage_div {
+    margin: 0;
+  }
+}

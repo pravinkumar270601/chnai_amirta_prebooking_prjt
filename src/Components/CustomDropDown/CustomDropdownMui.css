@@ -1,0 +1,41 @@
+/* .customDropdown-input{
+    height: 37px;
+  width: 100% ;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #ced4da; 
+}
+.customDropdown-disabled-option{
+    color: rgba(0, 0, 0, 0.3);
+    height: 37px;
+}
+
+.customDropdown-input:focus {
+    border-color: black;
+  }
+  
+  
+  */
+
+
+  .customDropdown-input{
+    height: 40px;
+  width: 100% ;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none; /* Remove outline when focused */
+  border: 1px solid #ced4da; 
+  padding: 5px 15px;
+}
+.customDropdown-disabled-option{
+    color: #888888;
+    height: 30px;
+}
+
+.customDropdown-input:focus {
+    border-color: black;
+  }
+  

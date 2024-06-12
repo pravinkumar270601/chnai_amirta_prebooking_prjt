@@ -1,0 +1,10 @@
+.grid-container{
+    background-color: rgb(220, 215, 215);
+padding: 10px;
+}
+.grid-item{
+    padding-bottom: 10px;
+}
+.Close_Button{
+    margin-right: 20px;
+margin-top: 10px;}

@@ -1,0 +1,98 @@
+/* .cust-radio-div .radio-label {
+    margin-right: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cust-radio-div .radio-input {
+    display: none;
+}
+
+.radio-option {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px; }
+
+.radio-option:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999; 
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.radio-input:checked + .radio-option:before {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+
+.radio-option-label {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+} */
+
+
+.cust-radio-div .radio-label {
+    margin-right: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #353942;
+}
+
+.cust-radio-div .radio-input {
+    display: none;
+}
+
+.radio-option {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px; /* Adjust this value to create space for the radio button */
+}
+
+.radio-option:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #999; /* Border color of the radio button */
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.radio-input:checked + .radio-option:before {
+    background-color: #ED2600; /* Color of the radio button when selected */
+    border-color: 1px solid #ED2600; /* Border color of the radio button when selected */
+}
+
+.radio-option-label {
+    position: relative;
+    /* top: -2px; */
+    /* margin-left: 5px; */
+    font-size: 12px;
+}
+
+.btn-option {
+    padding: 6px 15px;
+    margin: 5px;
+    border: 1px solid #ED2600;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn-selected {
+background-color: #ED2600;
+color: white;
+border: 1px solid #ED2600;
+}
+
+.inputs-error-msg {
+color: red;
+}
