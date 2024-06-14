@@ -28,7 +28,7 @@ const LoginPage = ({ setCourseName, setSuccessName }) => {
 
   const { MovieCreate } = useSelector((state) => state?.MovieCreate);
 
-  console.log(MovieCreate, "MovieCreate");
+  // console.log(MovieCreate, "MovieCreate");
 
   // console.log(LoginCreate,"LoginCreate");
 
@@ -54,7 +54,7 @@ const LoginPage = ({ setCourseName, setSuccessName }) => {
 
     try {
       const response = await axios.post(
-        "http://106.51.127.204:3000/api/v1/create",
+        "https://chennaisamirta.in/api/v1/create",
         values
       );
 
@@ -79,125 +79,7 @@ const LoginPage = ({ setCourseName, setSuccessName }) => {
 
   //----------------------PAYMENT CODE START----------------------->>>>>>>>>>>>>
 
-  // const [orderId, setOrderId] = useState(null);
-  // const [scriptLoaded, setScriptLoaded] = useState(false);
 
-  // // Effect for loading the Razorpay script
-  // useEffect(() => {
-  //   const script = document.createElement('script');
-  //   script.src = 'https://checkout.razorpay.com/v1/checkout.js';
-  //   script.async = true;
-  //   script.onload = () => setScriptLoaded(true);
-  //   document.body.appendChild(script);
-
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
-
-  // // Effect for generating order ID
-  // useEffect(() => {
-  //   const generateOrderId = async () => {
-  //     try {
-  //       const response = await fetch('/create/orderId', {
-  //         method: 'POST',
-  //         headers: {
-  //           'Content-Type': 'application/json',
-  //         },
-  //         body: JSON.stringify({ amount: '9900' }), // 99 INR in subunits
-  //         redirect: 'follow',
-  //       });
-
-  //       if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
-
-  //       const data = await response.json();
-  //       console.log('Response:', response);
-  //       console.log('Order ID:', data.orderId);
-
-  //       setOrderId(data.orderId);
-  //       document.getElementById('rzp-button1').style.display = 'block';
-  //     } catch (error) {
-  //       console.error('Error generating order ID:', error.message);
-  //     }
-  //   };
-
-  //   generateOrderId();
-  // }, []);
-
-  // // Effect for initializing Razorpay
-  // useEffect(() => {
-  //   if (!scriptLoaded || !orderId) return; // Guard clause to ensure both conditions are met
-
-  //   const options = {
-  //     key: 'rzp_test_dvwqkxYOW5YotE', // Your Razorpay key
-  //     amount: '9900', // 99 INR in subunits
-  //     currency: 'INR',
-  //     name: 'Acme Corp',
-  //     description: 'Test Transaction',
-  //     image: 'https://example.com/your_logo',
-  //     order_id: orderId, // Use the generated order ID
-  //     handler: async function (response) {
-  //       alert(response.razorpay_payment_id);
-  //       alert(response.razorpay_order_id);
-  //       alert(response.razorpay_signature);
-
-  //       // Call Signature Validate Method
-  //       try {
-  //         const verifyResponse = await fetch('/api/payment/verify', {
-  //           method: 'POST',
-  //           headers: {
-  //             'Content-Type': 'application/json',
-  //           },
-  //           body: JSON.stringify({ response }),
-  //         });
-  //         const verifyData = await verifyResponse.json();
-  //         console.log('Verification result:', verifyData);
-  //         if (verifyData.valid) {
-  //           alert('Payment verified successfully!');
-  //         } else {
-  //           alert('Payment verification failed!');
-  //         }
-  //       } catch (error) {
-  //         console.error('Error verifying payment:', error);
-  //       }
-  //     },
-  //     prefill: {
-  //       name: 'Gaurav Kumar',
-  //       email: 'gaurav.kumar@example.com',
-  //       contact: '9999999999',
-  //     },
-  //     notes: {
-  //       address: 'Razorpay Corporate Office',
-  //     },
-  //     theme: {
-  //       color: '#3399cc',
-  //     },
-  //   };
-
-  //   const rzp = new window.Razorpay(options);
-
-  //   rzp.on('payment.failed', function (response) {
-  //     alert(response.error.code);
-  //     alert(response.error.description);
-  //     alert(response.error.source);
-  //     alert(response.error.step);
-  //     alert(response.error.reason);
-  //     alert(response.error.metadata.order_id);
-  //     alert(response.error.metadata.payment_id);
-  //   });
-
-  //   document.getElementById('rzp-button1').onclick = function (e) {
-  //     rzp.open();
-  //     e.preventDefault();
-  //   };
-  // }, [scriptLoaded, orderId]);
-
-  // const handleProceedToPay = () => {
-  //   console.log("Proceed to Pay clicked");
-  //   setIsPaymentSuccess(true);
-  // };
 
   useEffect(() => {
     if (checkUserEmail == "The email already exist") {
@@ -226,8 +108,8 @@ const LoginPage = ({ setCourseName, setSuccessName }) => {
           setPaymentId(response.razorpay_payment_id);
         },
         prefill: {
-          name: "pravin", // Name of the candidate
-          email: "pravin143@gmail.com", // Email of the candidate
+          name: "chennaisamirta", // Name of the candidate
+          email: "chennaisamirta@gmail.com", // Email of the candidate
           contact: "67787875567", // Mobile number of the candidate
         },
         notes: {

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24ad8d21.css",
+    "main.js": "/static/js/main.411c8d42.js",
+    "static/js/453.912d6658.chunk.js": "/static/js/453.912d6658.chunk.js",
+    "static/media/Animation 1.gif": "/static/media/Animation 1.1c776097d30dfbfcd11e.gif",
+    "static/media/Animation 2.gif": "/static/media/Animation 2.c738db12b5d488b3d57f.gif",
+    "static/media/channai_amirtha_sc_video.mp4": "/static/media/channai_amirtha_sc_video.4b68bac722f602799732.mp4",
+    "static/media/Background img.jpg": "/static/media/Background img.b61f532c8b81ac5d27f8.jpg",
+    "static/media/UPI.png": "/static/media/UPI.c1a9297f1be549df4370.png",
+    "static/media/Cards.png": "/static/media/Cards.48eb8c2497352072b777.png",
+    "static/media/QR_code.png": "/static/media/QR_code.0d13ae435ef21c3471ad.png",
+    "static/media/Chennais Amirtha Logo.jpg": "/static/media/Chennais Amirtha Logo.a759c53ee1d0428b2c06.jpg",
+    "index.html": "/index.html",
+    "main.24ad8d21.css.map": "/static/css/main.24ad8d21.css.map",
+    "main.411c8d42.js.map": "/static/js/main.411c8d42.js.map",
+    "453.912d6658.chunk.js.map": "/static/js/453.912d6658.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24ad8d21.css",
+    "static/js/main.411c8d42.js"
+  ]
+}
